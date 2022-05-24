@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace yazilimmimarisi
 {
-    public partial class Form1 : MaterialForm
+    public partial class MainForm : MaterialForm
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             DefaultMaterialFormTheme.UseTheme(this);
