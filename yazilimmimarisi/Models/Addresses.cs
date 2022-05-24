@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    class Addresses
+    public class Addresses
     {
         public Address DepartureAddress { get; set; }
         public Address DestinationAddress { get; set; }

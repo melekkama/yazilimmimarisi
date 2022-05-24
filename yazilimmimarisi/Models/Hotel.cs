@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    enum BedType
+    public enum BedType
     {
         Single,
         Double,
         Triple
     }
-    class Hotel : Accomodation
+   public class Hotel : Accomodation
     {
         public BedType BedType { get; set; }
         //... other specific properties

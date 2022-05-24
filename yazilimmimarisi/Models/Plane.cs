@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    enum Class
+    public enum Class
     {
         Economy,
         Business,
     }
-    class Plane : Transportation
+  public  class Plane : Transportation
     {
         public string SeatNumber { get; set; }
         public Class Class { get; set; }

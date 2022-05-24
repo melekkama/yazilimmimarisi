@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    class User
+   public class User
     {
 
         public string IdentityNumber { get; set; }

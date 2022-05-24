@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    class Tent : Accomodation
+   public class Tent : Accomodation
     {
         public bool IsWindow { get; set; }
         public bool IsStorage { get; set; }

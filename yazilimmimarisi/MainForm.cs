@@ -18,5 +18,26 @@ namespace yazilimmimarisi
             InitializeComponent();
             DefaultMaterialFormTheme.UseTheme(this);
         }
+
+        private void btn_main_Click(object sender, EventArgs e)
+        {
+            var travelInfo = new TravelInfo
+            {
+                Dates = new Dates
+                {
+                    StartTime = dtp_start.Value,
+                    EndTime = dtp_end.Value
+                },
+                Addresses = new Addresses
+                {
+                    DepartureAddress = new Address() { City = cb_kalkıs.SelectedItem.ToString() },
+                    DestinationAddress = new Address() { City = cb_varıs.SelectedItem.ToString() }
+                }
+            };
+            var form = new Options(travelInfo);
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

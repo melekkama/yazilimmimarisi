@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    class Bus : Transportation
+   public class Bus : Transportation
     {
         public int SeatNumber { get; set; }
     }

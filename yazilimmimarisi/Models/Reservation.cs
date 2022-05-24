@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    class Reservation
+  public  class Reservation
     {
         public User User { get; set; }
         public Accomodation Accomodation { get; set; }

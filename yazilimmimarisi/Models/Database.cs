@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace yazilimmimarisi
 {
-   static class Database
+  public  static class Database
     {
-        public static List<User> Users { get; set; }
-        public static List<Reservation> Reservations { get; set; }
-        public static List<Transportation> Transportations { get; set; }
-        public static List<Accomodation> Accomodations { get; set; }
+        public static List<User> Users { get; set; } = new List<User>();
+        public static List<Reservation> Reservations { get; set; } = new List<Reservation>();
+        public static List<Transportation> Transportations { get; set; } = new List<Transportation>();
+        public static List<Accomodation> Accomodations { get; set; } = new List<Accomodation>();
     }
 }

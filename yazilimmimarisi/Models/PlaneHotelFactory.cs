@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    class PlaneHotelFactory:TravelFactory
+   public class PlaneHotelFactory:TravelFactory
     {
-        public override Accomodation CreateAccomodation()
-        {
-            return new Hotel();
-        }
+        public override Accomodation CreateAccomodation() =>
+             base.TravelService
+             .SearchAccomodation(base.TravelInfo.Dates, base.TravelInfo.Addresses.DestinationAddress)
+             .FirstOrDefault(x => x is Hotel);
 
-        public override Transportation CreateTransportation()
-        {
-            return new Plane();
-        }
+        public override Transportation CreateTransportation() =>
+            base.TravelService
+            .SearchTransportations(base.TravelInfo)
+            .FirstOrDefault(x => x is Plane);
     }
 }

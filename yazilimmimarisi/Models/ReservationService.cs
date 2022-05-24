@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    class ReservationService
+  public  class ReservationService
     {
         public Reservation CreateReservation(User user, TravelInfo travelInfo)
         {

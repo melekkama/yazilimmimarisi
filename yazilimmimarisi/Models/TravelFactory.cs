@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-   abstract class TravelFactory
+  public abstract class TravelFactory
     {
+        public TravelService TravelService { get; set; }
+        public TravelInfo TravelInfo { get; set; }
         public abstract Transportation CreateTransportation();
         public abstract Accomodation CreateAccomodation();
     }

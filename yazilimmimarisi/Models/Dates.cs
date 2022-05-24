@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-    class Dates
+   public class Dates
     {
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }

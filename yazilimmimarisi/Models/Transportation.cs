@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-   abstract class Transportation
+   public abstract class Transportation
     {
         public Firm Firm { get; set; }
         public decimal Price { get; set; }

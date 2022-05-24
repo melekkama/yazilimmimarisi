@@ -36,8 +36,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRadioButton2 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rb_cadir = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rb_otel = new MaterialSkin.Controls.MaterialRadioButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
@@ -117,7 +117,7 @@
             // 
             this.pictureBox2.Image = global::yazilimmimarisi.Properties.Resources.plane;
             this.pictureBox2.Location = new System.Drawing.Point(277, 80);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(133, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +128,7 @@
             // 
             this.pictureBox1.Image = global::yazilimmimarisi.Properties.Resources.bus;
             this.pictureBox1.Location = new System.Drawing.Point(31, 80);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -139,8 +139,8 @@
             // 
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard2.Controls.Add(this.materialLabel2);
-            this.materialCard2.Controls.Add(this.materialRadioButton2);
-            this.materialCard2.Controls.Add(this.materialRadioButton1);
+            this.materialCard2.Controls.Add(this.rb_cadir);
+            this.materialCard2.Controls.Add(this.rb_otel);
             this.materialCard2.Controls.Add(this.pictureBox4);
             this.materialCard2.Controls.Add(this.pictureBox3);
             this.materialCard2.Depth = 0;
@@ -167,43 +167,43 @@
             this.materialLabel2.TabIndex = 4;
             this.materialLabel2.Text = "Konaklama";
             // 
-            // materialRadioButton2
+            // rb_cadir
             // 
-            this.materialRadioButton2.AutoSize = true;
-            this.materialRadioButton2.Depth = 0;
-            this.materialRadioButton2.Location = new System.Drawing.Point(268, 198);
-            this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton2.Name = "materialRadioButton2";
-            this.materialRadioButton2.Ripple = true;
-            this.materialRadioButton2.Size = new System.Drawing.Size(72, 37);
-            this.materialRadioButton2.TabIndex = 3;
-            this.materialRadioButton2.TabStop = true;
-            this.materialRadioButton2.Text = "Çadır";
-            this.materialRadioButton2.UseVisualStyleBackColor = true;
+            this.rb_cadir.AutoSize = true;
+            this.rb_cadir.Depth = 0;
+            this.rb_cadir.Location = new System.Drawing.Point(268, 198);
+            this.rb_cadir.Margin = new System.Windows.Forms.Padding(0);
+            this.rb_cadir.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rb_cadir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rb_cadir.Name = "rb_cadir";
+            this.rb_cadir.Ripple = true;
+            this.rb_cadir.Size = new System.Drawing.Size(72, 37);
+            this.rb_cadir.TabIndex = 3;
+            this.rb_cadir.TabStop = true;
+            this.rb_cadir.Text = "Çadır";
+            this.rb_cadir.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton1
+            // rb_otel
             // 
-            this.materialRadioButton1.AutoSize = true;
-            this.materialRadioButton1.Depth = 0;
-            this.materialRadioButton1.Location = new System.Drawing.Point(44, 198);
-            this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton1.Name = "materialRadioButton1";
-            this.materialRadioButton1.Ripple = true;
-            this.materialRadioButton1.Size = new System.Drawing.Size(63, 37);
-            this.materialRadioButton1.TabIndex = 2;
-            this.materialRadioButton1.TabStop = true;
-            this.materialRadioButton1.Text = "Otel";
-            this.materialRadioButton1.UseVisualStyleBackColor = true;
+            this.rb_otel.AutoSize = true;
+            this.rb_otel.Depth = 0;
+            this.rb_otel.Location = new System.Drawing.Point(44, 198);
+            this.rb_otel.Margin = new System.Windows.Forms.Padding(0);
+            this.rb_otel.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rb_otel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rb_otel.Name = "rb_otel";
+            this.rb_otel.Ripple = true;
+            this.rb_otel.Size = new System.Drawing.Size(63, 37);
+            this.rb_otel.TabIndex = 2;
+            this.rb_otel.TabStop = true;
+            this.rb_otel.Text = "Otel";
+            this.rb_otel.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::yazilimmimarisi.Properties.Resources.camping_tent;
             this.pictureBox4.Location = new System.Drawing.Point(244, 76);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(152, 90);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,7 +214,7 @@
             // 
             this.pictureBox3.Image = global::yazilimmimarisi.Properties.Resources.hotel;
             this.pictureBox3.Location = new System.Drawing.Point(23, 76);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(141, 90);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -240,6 +240,7 @@
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // Options
             // 
@@ -249,7 +250,7 @@
             this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.materialCard1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Options";
             this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
             this.Text = "Options";
@@ -278,8 +279,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton2;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
+        private MaterialSkin.Controls.MaterialRadioButton rb_cadir;
+        private MaterialSkin.Controls.MaterialRadioButton rb_otel;
         private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }
