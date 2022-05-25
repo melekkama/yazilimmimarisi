@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-   public class Tent : Accomodation
+    [Serializable]
+    public class Tent : Accomodation
     {
         public bool IsWindow { get; set; }
         public bool IsStorage { get; set; }

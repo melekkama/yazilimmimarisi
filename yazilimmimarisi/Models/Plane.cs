@@ -11,7 +11,8 @@ namespace yazilimmimarisi
         Economy,
         Business,
     }
-  public  class Plane : Transportation
+    [Serializable]
+    public  class Plane : Transportation
     {
         public string SeatNumber { get; set; }
         public Class Class { get; set; }

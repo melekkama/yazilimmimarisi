@@ -96,6 +96,14 @@
     <Compile Include="Models\TravelService.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Services\DefaultMaterialFormDesign.cs" />
+    <Compile Include="Services\Report\Creators\HtmlReportExportCreator.cs" />
+    <Compile Include="Services\Report\Creators\XmlReportExportCreator.cs" />
+    <Compile Include="Services\Report\HtmlTool.cs" />
+    <Compile Include="Services\Report\IReportExport.cs" />
+    <Compile Include="Services\Report\Creators\JsonReportExportCreator.cs" />
+    <Compile Include="Services\Report\JsonTool.cs" />
+    <Compile Include="Services\Report\Creators\ReportExportCreator.cs" />
+    <Compile Include="Services\Report\XmlTool.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +148,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\camping-tent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Template.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

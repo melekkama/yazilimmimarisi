@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <fieldset>
+        <legend>Müşteri</legend>
+        <h5>Adı : {User.FirstName}</h5>
+        <h5>Soyadı : {User.FirstName}</h5>
+        <h5>Kimlik No : {User.IdentityNumber}</h5>
+        <h5>Email : {User.Email}</h5>
+        <h5>Telefon No : {User.PhoneNumber}</h5>
+    </fieldset>
+
+    <fieldset>
+        <legend>Tarihler</legend>
+        <h5>Gidis : {TravelInfo.Dates.StartTime}</h5>
+        <h5>Donus : {TravelInfo.Dates.EndTime}</h5>
+    </fieldset>
+
+    <fieldset>
+        <legend>Gidis</legend>
+        <h5>Tip : {Transportations.Departure.Type}</h5>
+        <h5>Ucret : {Transportations.Departure.Price}</h5>
+        <h5>Araç kapasitesi : {Transportations.Departure.Capacity}</h5>
+        <h5>Firma Adı : {Transportations.Departure.Firm.Name}</h5>
+        <h5>Firma Adresi : {Transportations.Departure.Firm.Address}</h5>
+    </fieldset>
+
+    <fieldset>
+        <legend>Donus</legend>
+        <h5>Tip : {Transportations.Return.Type}</h5>
+        <h5>Ucret : {Transportations.Return.Price}</h5>
+        <h5>Araç kapasitesi : {Transportations.Return.Capacity}</h5>
+        <h5>Firma Adı : {Transportations.Return.Firm.Name}</h5>
+        <h5>Firma Adresi : {Transportations.Return.Firm.Address}</h5>
+    </fieldset>
+
+    <fieldset>
+        <legend>Konaklama</legend>
+        <h5>Tip : {Accomodation.Type}</h5>
+        <h5>Ucret : {Accomodation.Price}</h5>
+        <h5>Kapasite : {Accomodation.Capacity}</h5>
+        <h5>Firma Adı : {Accomodation.Firm.Name}</h5>
+        <h5>Firma Adresi : {Accomodation.Firm.Address}</h5>
+    </fieldset>
+</body>
+</html>

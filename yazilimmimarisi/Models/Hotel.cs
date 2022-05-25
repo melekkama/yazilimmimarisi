@@ -11,7 +11,8 @@ namespace yazilimmimarisi
         Single,
         Double
     }
-   public class Hotel : Accomodation
+    [Serializable]
+    public class Hotel : Accomodation
     {
         public BedType BedType { get; set; }
         //... other specific properties

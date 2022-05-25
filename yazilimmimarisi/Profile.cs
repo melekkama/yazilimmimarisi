@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
+using yazilimmimarisi.Services.Report.Creators;
+
 namespace yazilimmimarisi
 {
     public partial class Profile : MaterialForm
@@ -50,6 +52,7 @@ namespace yazilimmimarisi
 
             Database.Reservations.Add(reservation);
             MessageBox.Show("Rezervasyonunuz başarıyla kaydedildi.");
+            tabControl1.SelectedIndex = 1;
         }
 
         private void btn_json_Click(object sender, EventArgs e)
@@ -61,10 +64,9 @@ namespace yazilimmimarisi
                 return;
             }
 
-            var desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            var reportPath = Path.Combine(desktop, "report.json");
-            var json = JsonConvert.SerializeObject(reservation,Formatting.Indented);
-            File.WriteAllText(reportPath, json);
+            var creator = new JsonReportExportCreator();
+            var exporter = creator.ReportExportFactory(reservation);
+            exporter.Export();
             MessageBox.Show("Rapor Masaüstüne oluşturuldu");
         }
 
@@ -77,12 +79,24 @@ namespace yazilimmimarisi
                 return;
             }
 
-            XmlSerializer MySerializer = new XmlSerializer(typeof(Reservation));
-            TextWriter TW = new StringWriter();
-            MySerializer.Serialize(TW, reservation);
-            var desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            var reportPath = Path.Combine(desktop, "report.xml");
-            File.WriteAllText(reportPath, TW.ToString());
+            var creator = new XmlReportExportCreator();
+            var exporter = creator.ReportExportFactory(reservation);
+            exporter.Export();
+            MessageBox.Show("Rapor Masaüstüne oluşturuldu");
+        }
+
+        private void btn_html_Click(object sender, EventArgs e)
+        {
+            var reservation = Database.Reservations.FirstOrDefault();
+            if (reservation == null)
+            {
+                tabControl1.SelectedIndex = 0;
+                return;
+            }
+
+            var creator = new HtmlReportExportCreator();
+            var exporter = creator.ReportExportFactory(reservation);
+            exporter.Export();
             MessageBox.Show("Rapor Masaüstüne oluşturuldu");
         }
     }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-   public class Bus : Transportation
+    [Serializable]
+    public class Bus : Transportation
     {
         public int SeatNumber { get; set; }
     }
