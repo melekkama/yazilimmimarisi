@@ -1,4 +1,5 @@
 ﻿using MaterialSkin.Controls;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,14 +25,15 @@ namespace yazilimmimarisi
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
+            //Gidiş 
             TravelFactory factory = null;
-            if (rb_otobus.Checked && rb_otel.Checked)
+            if (rb_gidis_otobus.Checked && rb_otel.Checked)
                 factory = new BusHotelFactory();
-            if (rb_ucak.Checked && rb_otel.Checked)
+            if (rb_gidis_ucak.Checked && rb_otel.Checked)
                 factory = new PlaneHotelFactory();
-            if (rb_otobus.Checked && rb_cadir.Checked)
+            if (rb_gidis_otobus.Checked && rb_cadir.Checked)
                 factory = new BusTentFactory();
-            if (rb_ucak.Checked && rb_cadir.Checked)
+            if (rb_gidis_ucak.Checked && rb_cadir.Checked)
                 factory = new PlaneTentFactory();
             if (factory == null)
             {
@@ -39,9 +41,36 @@ namespace yazilimmimarisi
                 return;
             }
             factory.TravelService = new TravelService();
-            factory.TravelInfo = info;  
-            Transportation transportation = factory.CreateTransportation();
+            factory.TravelInfo = info;
+            Transportation transportationGo = factory.CreateTransportation();
             Accomodation accomodation = factory.CreateAccomodation();
+
+            //Dönüş
+
+            if (rb_donus_otobus.Checked)
+                factory = new BusHotelFactory();
+            if (rb_donus_ucak.Checked)
+                factory = new PlaneHotelFactory();
+            factory.TravelInfo = info.Reverse();
+            factory.TravelService= new TravelService();
+            Transportation transportationBack = factory.CreateTransportation();
+
+            Transportations transportations = new Transportations()
+            {
+                Departure = transportationGo,
+                Return = transportationBack
+            };
+
+            Profile profile = new Profile(transportations, accomodation, info);
+            this.Hide();
+            profile.ShowDialog();
+            this.Close();
+            //var obj = new
+            //{
+            //    transportation,
+            //    accomodation
+            //};
+            //var json = JsonConvert.SerializeObject(obj, Formatting.Indented);
         }
     }
 }

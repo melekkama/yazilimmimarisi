@@ -9,8 +9,7 @@ namespace yazilimmimarisi
     public enum BedType
     {
         Single,
-        Double,
-        Triple
+        Double
     }
    public class Hotel : Accomodation
     {

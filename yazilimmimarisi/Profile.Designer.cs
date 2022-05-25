@@ -43,13 +43,13 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_html = new MaterialSkin.Controls.MaterialButton();
+            this.btn_json = new MaterialSkin.Controls.MaterialButton();
+            this.btn_xml = new MaterialSkin.Controls.MaterialButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -272,8 +272,9 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.materialButton1);
-            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.btn_html);
+            this.tabPage2.Controls.Add(this.btn_json);
+            this.tabPage2.Controls.Add(this.btn_xml);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -282,35 +283,67 @@
             this.tabPage2.Text = "RAPOR";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // materialButton1
+            // btn_html
             // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(3, 488);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(780, 36);
-            this.materialButton1.TabIndex = 1;
-            this.materialButton1.Text = "görüntüle";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.btn_html.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_html.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_html.Depth = 0;
+            this.btn_html.HighEmphasis = true;
+            this.btn_html.Icon = null;
+            this.btn_html.Location = new System.Drawing.Point(275, 293);
+            this.btn_html.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_html.MinimumSize = new System.Drawing.Size(252, 40);
+            this.btn_html.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_html.Name = "btn_html";
+            this.btn_html.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_html.Size = new System.Drawing.Size(252, 40);
+            this.btn_html.TabIndex = 3;
+            this.btn_html.Text = "HTML OLUŞTUR";
+            this.btn_html.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_html.UseAccentColor = false;
+            this.btn_html.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // btn_json
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(774, 479);
-            this.dataGridView1.TabIndex = 0;
+            this.btn_json.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_json.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_json.Depth = 0;
+            this.btn_json.HighEmphasis = true;
+            this.btn_json.Icon = null;
+            this.btn_json.Location = new System.Drawing.Point(275, 135);
+            this.btn_json.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_json.MinimumSize = new System.Drawing.Size(252, 40);
+            this.btn_json.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_json.Name = "btn_json";
+            this.btn_json.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_json.Size = new System.Drawing.Size(252, 40);
+            this.btn_json.TabIndex = 2;
+            this.btn_json.Text = "JSON OLUŞTUR";
+            this.btn_json.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_json.UseAccentColor = false;
+            this.btn_json.UseVisualStyleBackColor = true;
+            this.btn_json.Click += new System.EventHandler(this.btn_json_Click);
+            // 
+            // btn_xml
+            // 
+            this.btn_xml.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_xml.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_xml.Depth = 0;
+            this.btn_xml.HighEmphasis = true;
+            this.btn_xml.Icon = null;
+            this.btn_xml.Location = new System.Drawing.Point(275, 220);
+            this.btn_xml.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_xml.MinimumSize = new System.Drawing.Size(252, 40);
+            this.btn_xml.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_xml.Name = "btn_xml";
+            this.btn_xml.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_xml.Size = new System.Drawing.Size(252, 40);
+            this.btn_xml.TabIndex = 1;
+            this.btn_xml.Text = "XML OLUŞTUR";
+            this.btn_xml.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_xml.UseAccentColor = false;
+            this.btn_xml.UseVisualStyleBackColor = true;
+            this.btn_xml.Click += new System.EventHandler(this.btn_xml_Click);
             // 
             // Profile
             // 
@@ -326,7 +359,6 @@
             this.materialCard2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -344,11 +376,12 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private System.Windows.Forms.TabPage tabPage2;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialTextBox tb_email;
         private MaterialSkin.Controls.MaterialTextBox tb_telNo;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialButton btn_html;
+        private MaterialSkin.Controls.MaterialButton btn_json;
+        private MaterialSkin.Controls.MaterialButton btn_xml;
     }
 }

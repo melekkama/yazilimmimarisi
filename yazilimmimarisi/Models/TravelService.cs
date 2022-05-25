@@ -6,41 +6,54 @@ using System.Threading.Tasks;
 
 namespace yazilimmimarisi
 {
-  public  class TravelService
+    public class TravelService
     {
-        readonly Firm THY = new Firm()
+        private readonly Firm THY = new Firm()
         {
             Name = "THY",
             Address = new Address() { City = "Ankara" }
         };
-        readonly Firm KOC = new Firm()
+        private readonly Firm KOC = new Firm()
         {
             Name = "KOÇ",
             Address = new Address() { City = "Istanbul" }
         };
-        public List<Transportation> SearchTransportations(TravelInfo info)
-        {
-            return new List<Transportation>()
+        public List<Transportation> SearchTransportations(TravelInfo info) => new List<Transportation>()
             {
                 new Plane()
                 {
                     Capacity=100,
                     Price=400,
                     Firm = THY,
-                    Travel= info
+                    Travel= new TravelInfo()
+                    {
+                        Addresses=info.Addresses,
+                        Dates=new Dates()
+                        {
+                            StartTime=info.Dates.StartTime,
+                            EndTime=info.Dates.StartTime.AddHours(2)
+                        }
+                    }
                 },
                 new Bus()
                 {
                     Capacity=30,
                     Price=250,
                     Firm = KOC,
-                    Travel= info
+                    Travel= new TravelInfo()
+                    {
+                        Addresses=info.Addresses,
+                        Dates=new Dates()
+                        {
+                            StartTime=info.Dates.StartTime,
+                            EndTime=info.Dates.StartTime.AddHours(10)
+                        }
+                    }
                 }
             };
-        }
         public List<Accomodation> SearchAccomodation(Dates dates, Address accomodationAddress)
         {
-            var dayCount= dates.EndTime - dates.StartTime;
+            var dayCount = dates.EndTime - dates.StartTime;
             return new List<Accomodation>()
             {
                 new Tent()

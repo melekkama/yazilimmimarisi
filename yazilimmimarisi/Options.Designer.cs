@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rb_otobus = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rb_ucak = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rb_gidis_otobus = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rb_gidis_ucak = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -41,54 +41,65 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.rb_donus_ucak = new MaterialSkin.Controls.MaterialRadioButton();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.rb_donus_otobus = new MaterialSkin.Controls.MaterialRadioButton();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialCard2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.materialCard3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // rb_otobus
+            // rb_gidis_otobus
             // 
-            this.rb_otobus.AutoSize = true;
-            this.rb_otobus.Depth = 0;
-            this.rb_otobus.Location = new System.Drawing.Point(31, 209);
-            this.rb_otobus.Margin = new System.Windows.Forms.Padding(0);
-            this.rb_otobus.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rb_otobus.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rb_otobus.Name = "rb_otobus";
-            this.rb_otobus.Ripple = true;
-            this.rb_otobus.Size = new System.Drawing.Size(86, 37);
-            this.rb_otobus.TabIndex = 2;
-            this.rb_otobus.TabStop = true;
-            this.rb_otobus.Text = "Otobüs";
-            this.rb_otobus.UseVisualStyleBackColor = true;
+            this.rb_gidis_otobus.AutoSize = true;
+            this.rb_gidis_otobus.Depth = 0;
+            this.rb_gidis_otobus.Location = new System.Drawing.Point(31, 209);
+            this.rb_gidis_otobus.Margin = new System.Windows.Forms.Padding(0);
+            this.rb_gidis_otobus.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rb_gidis_otobus.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rb_gidis_otobus.Name = "rb_gidis_otobus";
+            this.rb_gidis_otobus.Ripple = true;
+            this.rb_gidis_otobus.Size = new System.Drawing.Size(86, 37);
+            this.rb_gidis_otobus.TabIndex = 2;
+            this.rb_gidis_otobus.TabStop = true;
+            this.rb_gidis_otobus.Text = "Otobüs";
+            this.rb_gidis_otobus.UseVisualStyleBackColor = true;
             // 
-            // rb_ucak
+            // rb_gidis_ucak
             // 
-            this.rb_ucak.AutoSize = true;
-            this.rb_ucak.Depth = 0;
-            this.rb_ucak.Location = new System.Drawing.Point(277, 209);
-            this.rb_ucak.Margin = new System.Windows.Forms.Padding(0);
-            this.rb_ucak.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rb_ucak.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rb_ucak.Name = "rb_ucak";
-            this.rb_ucak.Ripple = true;
-            this.rb_ucak.Size = new System.Drawing.Size(70, 37);
-            this.rb_ucak.TabIndex = 3;
-            this.rb_ucak.TabStop = true;
-            this.rb_ucak.Text = "Uçak";
-            this.rb_ucak.UseVisualStyleBackColor = true;
+            this.rb_gidis_ucak.AutoSize = true;
+            this.rb_gidis_ucak.Depth = 0;
+            this.rb_gidis_ucak.Location = new System.Drawing.Point(277, 209);
+            this.rb_gidis_ucak.Margin = new System.Windows.Forms.Padding(0);
+            this.rb_gidis_ucak.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rb_gidis_ucak.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rb_gidis_ucak.Name = "rb_gidis_ucak";
+            this.rb_gidis_ucak.Ripple = true;
+            this.rb_gidis_ucak.Size = new System.Drawing.Size(70, 37);
+            this.rb_gidis_ucak.TabIndex = 3;
+            this.rb_gidis_ucak.TabStop = true;
+            this.rb_gidis_ucak.Text = "Uçak";
+            this.rb_gidis_ucak.UseVisualStyleBackColor = true;
             // 
             // materialCard1
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Controls.Add(this.pictureBox2);
-            this.materialCard1.Controls.Add(this.rb_ucak);
+            this.materialCard1.Controls.Add(this.rb_gidis_ucak);
             this.materialCard1.Controls.Add(this.pictureBox1);
-            this.materialCard1.Controls.Add(this.rb_otobus);
+            this.materialCard1.Controls.Add(this.rb_gidis_otobus);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard1.Location = new System.Drawing.Point(53, 143);
@@ -145,7 +156,7 @@
             this.materialCard2.Controls.Add(this.pictureBox3);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(559, 143);
+            this.materialCard2.Location = new System.Drawing.Point(330, 451);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(19, 17, 19, 17);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
@@ -229,12 +240,12 @@
             this.materialButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(4, 492);
+            this.materialButton1.Location = new System.Drawing.Point(4, 762);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(1059, 36);
+            this.materialButton1.Size = new System.Drawing.Size(1107, 36);
             this.materialButton1.TabIndex = 6;
             this.materialButton1.Text = "N E X T";
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -242,11 +253,126 @@
             this.materialButton1.UseVisualStyleBackColor = true;
             this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel3.Location = new System.Drawing.Point(219, 85);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(77, 41);
+            this.materialLabel3.TabIndex = 7;
+            this.materialLabel3.Text = "Gidiş";
+            // 
+            // materialCard3
+            // 
+            this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard3.Controls.Add(this.materialLabel4);
+            this.materialCard3.Controls.Add(this.pictureBox5);
+            this.materialCard3.Controls.Add(this.rb_donus_ucak);
+            this.materialCard3.Controls.Add(this.pictureBox6);
+            this.materialCard3.Controls.Add(this.rb_donus_otobus);
+            this.materialCard3.Depth = 0;
+            this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard3.Location = new System.Drawing.Point(608, 143);
+            this.materialCard3.Margin = new System.Windows.Forms.Padding(19, 17, 19, 17);
+            this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard3.Name = "materialCard3";
+            this.materialCard3.Padding = new System.Windows.Forms.Padding(19, 17, 19, 17);
+            this.materialCard3.Size = new System.Drawing.Size(452, 274);
+            this.materialCard3.TabIndex = 5;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel4.Location = new System.Drawing.Point(167, 17);
+            this.materialLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(75, 29);
+            this.materialLabel4.TabIndex = 4;
+            this.materialLabel4.Text = "Ulaşım";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::yazilimmimarisi.Properties.Resources.plane;
+            this.pictureBox5.Location = new System.Drawing.Point(277, 80);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(133, 84);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // rb_donus_ucak
+            // 
+            this.rb_donus_ucak.AutoSize = true;
+            this.rb_donus_ucak.Depth = 0;
+            this.rb_donus_ucak.Location = new System.Drawing.Point(277, 209);
+            this.rb_donus_ucak.Margin = new System.Windows.Forms.Padding(0);
+            this.rb_donus_ucak.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rb_donus_ucak.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rb_donus_ucak.Name = "rb_donus_ucak";
+            this.rb_donus_ucak.Ripple = true;
+            this.rb_donus_ucak.Size = new System.Drawing.Size(70, 37);
+            this.rb_donus_ucak.TabIndex = 3;
+            this.rb_donus_ucak.TabStop = true;
+            this.rb_donus_ucak.Text = "Uçak";
+            this.rb_donus_ucak.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::yazilimmimarisi.Properties.Resources.bus;
+            this.pictureBox6.Location = new System.Drawing.Point(31, 80);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(133, 84);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // rb_donus_otobus
+            // 
+            this.rb_donus_otobus.AutoSize = true;
+            this.rb_donus_otobus.Depth = 0;
+            this.rb_donus_otobus.Location = new System.Drawing.Point(31, 209);
+            this.rb_donus_otobus.Margin = new System.Windows.Forms.Padding(0);
+            this.rb_donus_otobus.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rb_donus_otobus.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rb_donus_otobus.Name = "rb_donus_otobus";
+            this.rb_donus_otobus.Ripple = true;
+            this.rb_donus_otobus.Size = new System.Drawing.Size(86, 37);
+            this.rb_donus_otobus.TabIndex = 2;
+            this.rb_donus_otobus.TabStop = true;
+            this.rb_donus_otobus.Text = "Otobüs";
+            this.rb_donus_otobus.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel5.Location = new System.Drawing.Point(773, 85);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(98, 41);
+            this.materialLabel5.TabIndex = 8;
+            this.materialLabel5.Text = "Dönüş";
+            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 532);
+            this.ClientSize = new System.Drawing.Size(1115, 802);
+            this.Controls.Add(this.materialLabel5);
+            this.Controls.Add(this.materialCard3);
+            this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.materialCard1);
@@ -262,6 +388,10 @@
             this.materialCard2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.materialCard3.ResumeLayout(false);
+            this.materialCard3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,8 +401,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private MaterialSkin.Controls.MaterialRadioButton rb_otobus;
-        private MaterialSkin.Controls.MaterialRadioButton rb_ucak;
+        private MaterialSkin.Controls.MaterialRadioButton rb_gidis_otobus;
+        private MaterialSkin.Controls.MaterialRadioButton rb_gidis_ucak;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialCard materialCard2;
@@ -282,5 +412,13 @@
         private MaterialSkin.Controls.MaterialRadioButton rb_cadir;
         private MaterialSkin.Controls.MaterialRadioButton rb_otel;
         private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialCard materialCard3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private MaterialSkin.Controls.MaterialRadioButton rb_donus_ucak;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private MaterialSkin.Controls.MaterialRadioButton rb_donus_otobus;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
     }
 }
